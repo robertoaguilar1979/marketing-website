@@ -1,10 +1,8 @@
-/* https://xd.adobe.com/spec/f255d364-6d5e-4aaf-7703-6f8d0a398281-8464/grid/ */
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -226,12 +224,16 @@ footer {
         margin: 0;
         padding: 0;
         width: 100%;
-        transform: translateX(0);
-        transition: transform 250ms;
+        /* transform: translateX(0); */
+        /* transition: transform 250ms; */
+        transition: all 450ms ease-in-out;
+        ;
     }
 
+    /*======javascript class list add and remove ========*/
     .navigation-open {
-        transform: translateX(-100%);
+        /* transform: translateX(-100%); */
+        left: 0;
     }
 
     .nav-list {
@@ -539,7 +541,7 @@ textarea {
 
 }
 
-/**************** contack media queries ***************/
+/**************** contact media queries ***************/
 
 @media(max-width:600px) {
     .name-email {
