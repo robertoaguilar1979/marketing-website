@@ -245,7 +245,7 @@ footer {
         /* transform: translateX(0); */
         /* transition: transform 250ms; */
         transition: all 450ms ease-in-out;
-        ;
+
     }
 
     @media(max-width:400px) {
@@ -271,10 +271,10 @@ footer {
         padding: 1em 0;
         border: 2px solid var(--yellow);
         height: 100%;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
         display: flex;
         flex-direction: column;
-        justify-content: start;
 
     }
 
@@ -326,8 +326,9 @@ footer {
     .our-skills {
         display: grid;
         grid-template-columns: 1fr;
-        margin: 2.5em;
+        margin: 1.5em;
         justify-items: center;
+        padding: 1em;
     }
 
     .social-media {
