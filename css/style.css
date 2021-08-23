@@ -106,6 +106,7 @@ nav li {
 .main-content {
     max-width: 650px;
     margin-top: 10em;
+    padding: 2em;
 }
 
 .current {
@@ -126,16 +127,19 @@ nav li {
     color: var(--black);
 }
 
+
+
 /******************** section our skills *******************/
 .our-skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    margin: 5em;
-    padding: 1em;
-    gap: 1.5em;
+    padding: 5em;
+    gap: 3em;
     text-align: center;
     background-color: var(--white);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .our-skills h2::after {
@@ -157,21 +161,31 @@ nav li {
 /********************* footer ******************************/
 footer {
     background-color: var(--white-grey);
-    display: flex;
-    padding: 6em;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     align-items: center;
+    padding: 1.75em;
+
+
+}
+
+.footer-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer-content {
+    text-align: center;
     color: rgba(0, 0, 0, .4);
-    margin-right: 4em;
     max-width: 600px;
 }
 
 .social-media {
     display: flex;
     font-size: 1.75em;
+    text-align: center;
+    margin-top: .75em;
 
 }
 
@@ -180,7 +194,7 @@ footer {
 }
 
 .last-footer-item {
-    margin-top: 4em;
+    margin-top: 1.5em;
 }
 
 /******** hamburger if off on pc mode *******/
@@ -197,6 +211,10 @@ footer {
 @media(max-width:725px) {
     a:visited {
         color: inherit;
+    }
+
+    .main-content {
+        margin-top: 4em;
     }
 
     .main-picture {
@@ -228,6 +246,17 @@ footer {
         /* transition: transform 250ms; */
         transition: all 450ms ease-in-out;
         ;
+    }
+
+    @media(max-width:400px) {
+        .main-picture {
+            height: 100vh;
+        }
+
+        .main-content {
+            margin-top: 0;
+            padding-bottom: 2em;
+        }
     }
 
     /*======javascript class list add and remove ========*/
